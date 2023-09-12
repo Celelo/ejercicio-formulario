@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="imagen-fondo"></div>
+        <h3 class="title has-text-centered">Formulario de Registro</h3>
+        <form class="form-container" action="#">
+            <div class="columns is-multiline">
+
+                <div class="field column is-6">
+                    <label class="label">Nombre</label>
+                    <div class="control">
+                        <input id="nameInput" class="input" type="text" placeholder="ingrese su nombre">
+                    </div>
+                </div>
+
+                <div class="column is-6 field">
+                    <label class="label">Apellido</label>
+                    <div class="control">
+                        <input id="lastnameInput" class="input" type="text" placeholder="ingrese su apellido">
+                    </div>
+                </div>
+
+                <div class=" column is-6 field">
+                    <label class="label">Fecha de nacimiento</label>
+                    <div class="control">
+                        <input id="birthInput" class="input" type="date">
+                    </div>
+                </div>
+
+                <div class="column is-6 field">
+                    <label class="label">Curso</label>
+                    <div class="select is-fullwidth">
+                        <select id="classSelect"></select>
+                        <button type="button" class="mt-6 button is-small is-danger" id="deleteBtn">eliminar
+                            curso</button>
+                            <button id="addBtn" type="button" class="button is-info mt-6 button is-small">agregar curso</button>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" class="button is-success">
+            <input type="reset" class="button is-primary">
+        </form>
+
+        <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content box">
+                <form>
+                    <div class="field">
+                        <label class="label">Nombre de curso</label>
+                        <div class="control">
+                            <input id="curseName" class="input" type="text" placeholder="escriba aqui...">
+                        </div>
+                    </div>
+                    <input id="addCurse" type="submit" class="button is-success">
+                </form>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

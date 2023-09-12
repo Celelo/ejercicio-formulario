@@ -1,0 +1,19 @@
+body {
+    background-color: #736c77;
+}
+
+.imagen-fondo {
+    background-image: url(https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=944&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vh;
+}
+
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.is-small {
+}
